@@ -25,16 +25,16 @@ export const HERO_SLIDES: HeroSlide[] = [
     subtitle: 'Gastronomia refinada e cenários deslumbrantes para o seu "sim" em Brasília.',
   },
   {
-    id: 3,
-    image: '/images/hero-3.jpg',
-    title: 'Churrasco Premium',
-    subtitle: 'A tradição do fogo aliada a cortes nobres e acompanhamentos exclusivos.',
-  },
-  {
     id: 2,
     image: '/images/hero-2.jpg',
     title: 'Aniversários Vibrantes',
     subtitle: 'Celebrações vibrantes que unem sofisticação, sabor e alegria em cada detalhe.',
+  },
+  {
+    id: 3,
+    image: '/images/hero-3.jpg',
+    title: 'Churrasco Premium',
+    subtitle: 'A tradição do fogo aliada a cortes nobres e acompanhamentos exclusivos.',
   },
   {
     id: 4,

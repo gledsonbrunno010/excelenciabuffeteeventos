@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
         ? 'bg-[#fcfdff] shadow-xl py-3'
-        : 'bg-transparent py-8'
+        : 'bg-transparent py-4 md:py-8'
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -101,7 +101,8 @@ const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-4xl font-display font-bold text-[#1c090b] border-b border-[#1c090b]/5 pb-4"
+                className="text-2xl md:text-4xl font-display font-medium text-[#1c090b] hover:text-[#575048] transition-colors"
+                style={{ fontFamily: 'Inter, sans-serif' }} // More minimalist font
               >
                 {link.name}
               </a>

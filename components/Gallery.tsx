@@ -14,6 +14,18 @@ const Gallery: React.FC = () => {
     return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedImage]);
+
   return (
     <section id="galeria" className="py-24 bg-[#fcfdff] overflow-hidden">
       <div className="container mx-auto px-6 mb-16 text-center">

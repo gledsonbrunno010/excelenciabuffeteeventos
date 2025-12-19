@@ -19,7 +19,7 @@ export default {
             },
             animation: {
                 'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
-                'marquee': 'marquee 50s linear infinite',
+                'marquee': 'marquee 35s linear infinite',
             },
             keyframes: {
                 fadeInDown: {
