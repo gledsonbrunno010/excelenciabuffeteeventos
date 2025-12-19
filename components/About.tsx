@@ -16,9 +16,9 @@ const About: React.FC = () => {
               />
             </div>
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-[#1c090b] hidden xl:flex items-center justify-center p-8 z-[-1]"></div>
-            <div className="absolute -bottom-10 -right-10 bg-[#1c090b] text-[#fcfdff] p-12 shadow-2xl">
-              <div className="text-7xl font-display font-bold mb-2">{CONTACT.yearsExperience}</div>
-              <div className="text-xs uppercase tracking-[0.4em] font-bold opacity-80 leading-relaxed">
+            <div className="absolute -bottom-10 right-0 lg:-bottom-10 lg:-right-10 bg-[#1c090b] text-[#fcfdff] p-6 lg:p-12 shadow-2xl">
+              <div className="text-5xl lg:text-7xl font-display font-bold mb-2">{CONTACT.yearsExperience}</div>
+              <div className="text-[10px] lg:text-xs uppercase tracking-[0.4em] font-bold opacity-80 leading-relaxed">
                 Anos Realizando<br />Grandes Sonhos
               </div>
             </div>

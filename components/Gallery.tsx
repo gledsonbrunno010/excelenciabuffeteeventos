@@ -36,7 +36,7 @@ const Gallery: React.FC = () => {
         </p>
       </div>
 
-      <div className="relative w-full">
+      <div className="relative w-full overflow-hidden">
         {/* Simple CSS-only infinite slider */}
         <div className="flex w-max animate-marquee hover:pause">
           {[...GALLERY_IMAGES, ...GALLERY_IMAGES].map((img, idx) => (

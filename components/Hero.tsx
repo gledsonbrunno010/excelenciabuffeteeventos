@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
               href={CONTACT.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-[#fcfdff] text-[#1c090b] px-6 py-3 md:px-10 md:py-5 text-xs md:text-base font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-center shadow-2xl hover:bg-[#fce4be]"
+              className="group bg-[#fce4be] text-[#1c090b] px-6 py-3 md:px-10 md:py-5 text-xs md:text-base font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-center shadow-2xl hover:bg-[#fcfdff]"
             >
               Solicitar Orçamento
               <svg className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
