@@ -22,24 +22,22 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-[#fcfdff] shadow-xl py-3' 
-          : 'bg-transparent py-8'
-      }`}
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
+        ? 'bg-[#fcfdff] shadow-xl py-3'
+        : 'bg-transparent py-8'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Dominant Logo */}
-        <a href="#home" className="flex flex-col group cursor-pointer">
-          <span className={`font-display text-3xl md:text-5xl font-bold leading-none tracking-tight transition-colors duration-500 ${
-            isScrolled ? 'text-[#1c090b]' : 'text-[#fcfdff] md:text-[#1c090b]'
-          }`}>
+        {/* Dominant Logo */}
+        <a href="#home" className="flex flex-col group cursor-pointer z-50">
+          <span className={`font-display text-3xl md:text-5xl font-bold leading-none tracking-tight transition-colors duration-500 ${isScrolled ? 'text-[#1c090b]' : 'text-white'
+            }`}>
             Excelência
           </span>
-          <span className={`text-[10px] md:text-xs uppercase tracking-[0.5em] font-bold transition-colors duration-500 ${
-            isScrolled ? 'text-[#575048]' : 'text-[#fcfdff]/80 md:text-[#575048]'
-          }`}>
+          <span className={`text-[10px] md:text-xs uppercase tracking-[0.5em] font-bold transition-colors duration-500 ${isScrolled ? 'text-[#575048]' : 'text-white/80'
+            }`}>
             Buffet & Eventos
           </span>
         </a>
@@ -47,31 +45,29 @@ const Navbar: React.FC = () => {
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-12">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
-              className={`text-sm font-bold tracking-widest uppercase hover:text-[#1c090b] transition-colors ${
-                isScrolled ? 'text-[#575048]' : 'text-[#fcfdff] md:text-[#575048]'
-              }`}
+              className={`text-sm font-bold tracking-widest uppercase hover:text-[#1c090b] transition-colors ${isScrolled ? 'text-[#575048]' : 'text-white'
+                }`}
             >
               {link.name}
             </a>
           ))}
-          <a 
+          <a
             href={CONTACT.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1c090b] text-[#fcfdff] px-8 py-4 text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#575048] transition-all transform hover:-translate-y-1 shadow-lg"
+            className="bg-[#fce4be] text-[#1c090b] px-8 py-4 text-xs font-bold tracking-[0.2em] uppercase hover:bg-white hover:text-[#1c090b] transition-all transform hover:-translate-y-1 shadow-lg"
           >
             Orçamento WhatsApp
           </a>
         </div>
 
         {/* Mobile Toggle */}
-        <button 
-          className={`lg:hidden p-2 rounded-full transition-colors ${
-            isScrolled ? 'text-[#1c090b] bg-[#fce4be]/30' : 'text-[#fcfdff] bg-black/20'
-          }`}
+        <button
+          className={`lg:hidden p-2 rounded-full transition-colors ${isScrolled ? 'text-[#1c090b] bg-[#fce4be]/30' : 'text-[#fcfdff] bg-black/20'
+            }`}
           onClick={() => setIsMenuOpen(true)}
           aria-label="Abrir menu"
         >
@@ -82,10 +78,9 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div 
-        className={`fixed inset-0 bg-[#fcfdff] z-[100] transition-transform duration-700 ease-in-out transform ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } lg:hidden`}
+      <div
+        className={`fixed inset-0 bg-[#fcfdff] z-[100] transition-transform duration-700 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          } lg:hidden`}
       >
         <div className="flex flex-col h-full p-10">
           <div className="flex justify-between items-center mb-16">
@@ -99,11 +94,11 @@ const Navbar: React.FC = () => {
               </svg>
             </button>
           </div>
-          
+
           <div className="flex flex-col space-y-8">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-4xl font-display font-bold text-[#1c090b] border-b border-[#1c090b]/5 pb-4"
@@ -114,7 +109,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="mt-auto">
-            <a 
+            <a
               href={CONTACT.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
