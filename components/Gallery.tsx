@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
 
       <div className="relative w-full overflow-hidden">
         {/* Simple CSS-only infinite slider */}
-        <div className="flex w-max animate-marquee hover:pause">
+        <div className="flex w-max animate-marquee hover:pause will-change-transform">
           {[...GALLERY_IMAGES, ...GALLERY_IMAGES].map((img, idx) => (
             <div
               key={`${img.id}-${idx}`}
@@ -50,6 +50,7 @@ const Gallery: React.FC = () => {
                 alt={img.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500 flex items-center justify-center">
                 <span className="text-white opacity-0 group-hover:opacity-100 uppercase tracking-widest text-xs font-bold transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">

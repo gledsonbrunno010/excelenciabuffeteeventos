@@ -76,12 +76,12 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const GALLERY_IMAGES: GalleryItem[] = [
-  { id: '1', url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800', title: 'Salão de Festas Luxuoso' },
-  { id: '2', url: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800', title: 'Apresentação de Pratos' },
-  { id: '3', url: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800', title: 'Buffet Gourmet' },
-  { id: '4', url: 'https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&q=80&w=800', title: 'Serviço de Garçom' },
-  { id: '5', url: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&q=80&w=800', title: 'Brinde Casamento' },
-  { id: '6', url: 'https://images.unsplash.com/photo-1547573854-74d2a71d0826?auto=format&fit=crop&q=80&w=800', title: 'Mesa de Frios' },
-  { id: '7', url: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800', title: 'Carnes Grelhadas' },
-  { id: '8', url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800', title: 'Decoração Floral' },
+  { id: '1', url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=75&w=600', title: 'Salão de Festas Luxuoso' },
+  { id: '2', url: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=75&w=600', title: 'Apresentação de Pratos' },
+  { id: '3', url: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=600', title: 'Buffet Gourmet' },
+  { id: '4', url: 'https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&q=75&w=600', title: 'Serviço de Garçom' },
+  { id: '5', url: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&q=75&w=600', title: 'Brinde Casamento' },
+  { id: '6', url: 'https://images.unsplash.com/photo-1547573854-74d2a71d0826?auto=format&fit=crop&q=75&w=600', title: 'Mesa de Frios' },
+  { id: '7', url: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=75&w=600', title: 'Carnes Grelhadas' },
+  { id: '8', url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=75&w=600', title: 'Decoração Floral' },
 ];

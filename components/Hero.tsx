@@ -17,12 +17,15 @@ const Hero: React.FC = () => {
       {HERO_SLIDES.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+          className={`absolute inset-0 transition-opacity duration-[2000ms] ease-in-out will-change-[opacity] ${index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
         >
           <img
             src={slide.image}
             alt={slide.title}
+            loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "low"}
+            decoding={index === 0 ? "sync" : "async"}
             className={`w-full h-full object-cover object-center transition-transform duration-[6000ms] ease-linear ${index === currentSlide ? 'scale-105' : 'scale-100'
               }`}
           />

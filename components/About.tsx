@@ -12,6 +12,8 @@ const About: React.FC = () => {
               <img
                 src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=1200"
                 alt="Dione Genesis - Excelência Buffet"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
