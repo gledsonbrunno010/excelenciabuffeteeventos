@@ -4,7 +4,7 @@ import { CONTACT } from '../constants';
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-32 bg-[#fce4be]/10">
+    <section id="sobre" className="py-16 md:py-32 bg-[#fce4be]/10">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative order-2 lg:order-1">

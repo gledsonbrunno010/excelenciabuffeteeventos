@@ -4,9 +4,9 @@ import { SERVICES, CONTACT } from '../constants';
 
 const Services: React.FC = () => {
   return (
-    <section id="servicos" className="py-32 bg-[#fcfdff]">
+    <section id="servicos" className="py-16 md:py-32 bg-[#fcfdff]">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center mb-24">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-24">
           <span className="text-xs font-bold tracking-[0.5em] uppercase text-[#575048]/50 block mb-6">Expertise Gastronômica</span>
           <h2 className="text-5xl md:text-8xl text-[#1c090b] leading-tight mb-8">Nossas Soluções em Buffet</h2>
           <p className="text-xl md:text-2xl text-[#575048] font-light leading-relaxed">

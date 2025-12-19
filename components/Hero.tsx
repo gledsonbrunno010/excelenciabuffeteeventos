@@ -35,13 +35,13 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 h-full container mx-auto px-6 flex flex-col justify-center items-center text-center">
-        <div key={currentSlide} className="max-w-5xl space-y-8 animate-fade-in-down">
-          <div className="inline-flex items-center gap-4 text-[#fcfdff] uppercase tracking-[0.6em] text-xs md:text-sm font-bold bg-[#1c090b]/40 backdrop-blur-sm px-6 py-2 border border-white/20">
-            <span className="w-2 h-2 bg-[#fce4be] rounded-full animate-pulse"></span>
+        <div key={currentSlide} className="max-w-5xl space-y-4 md:space-y-8 animate-fade-in-down">
+          <div className="inline-flex items-center gap-2 md:gap-4 text-[#fcfdff] uppercase tracking-[0.4em] md:tracking-[0.6em] text-[10px] md:text-sm font-bold bg-[#1c090b]/40 backdrop-blur-sm px-4 py-1.5 md:px-6 md:py-2 border border-white/20 mt-12 md:mt-0">
+            <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[#fce4be] rounded-full animate-pulse"></span>
             {CONTACT.yearsExperience} anos de Tradição em Brasília
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-[#fce4be] leading-[1.1] font-bold tracking-tighter drop-shadow-2xl text-shadow-premium">
+          <h1 className="text-6xl sm:text-5xl md:text-7xl lg:text-8xl text-[#fce4be] leading-[1.0] md:leading-[1.1] font-bold tracking-tighter drop-shadow-2xl text-shadow-premium">
             {HERO_SLIDES[currentSlide].title}
           </h1>
 
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
               href={CONTACT.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-[#fcfdff] text-[#1c090b] px-10 py-5 text-sm md:text-base font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-center shadow-2xl hover:bg-[#fce4be]"
+              className="group bg-[#fcfdff] text-[#1c090b] px-6 py-3 md:px-10 md:py-5 text-xs md:text-base font-bold tracking-[0.2em] uppercase transition-all flex items-center justify-center shadow-2xl hover:bg-[#fce4be]"
             >
               Solicitar Orçamento
               <svg className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
             </a>
             <a
               href="#servicos"
-              className="bg-white/10 backdrop-blur-md border border-white/30 text-[#fcfdff] px-10 py-5 text-sm md:text-base font-bold tracking-[0.2em] uppercase transition-all hover:bg-white/20 text-center"
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-[#fcfdff] px-6 py-3 md:px-10 md:py-5 text-xs md:text-base font-bold tracking-[0.2em] uppercase transition-all hover:bg-white/20 text-center"
             >
               Nossos Serviços
             </a>
